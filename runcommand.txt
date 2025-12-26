@@ -1,0 +1,36 @@
+$ cd /c/Users/DELL/OneDrive/Desktop/projectFolder
+
+$ git init
+Initialized empty Git repository in C:/Users/DELL/OneDrive/Desktop/projectFolder/.git/
+
+$ git add .
+
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   style.css
+
+$ git commit -m "new file"
+[master (root-commit) f2f9fd3] new file
+ 2 files changed, 31 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 style.css
+
+$ git add .
+
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+$ git commit -m "change test"
+[master c141f9c] change test
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+
