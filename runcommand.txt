@@ -89,6 +89,24 @@ $ git pull -u origin main --allow-unrelated-histories
 
 $ pit push -u origin main 
 
+$ git checkout main
+
+$ git branch (branch_name)
+
+$ git checkout (branch_name)
+
+$ git status
+
+$ git add .
+
+$ git commit -m "new feature"
+
+$ git checkout main
+
+$ git merge (branch_name)
+
+$ git branch -d (branch_name)
+
 
 
 
