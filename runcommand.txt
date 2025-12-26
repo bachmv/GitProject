@@ -46,5 +46,50 @@ $ git commit -m "new file command"
  1 file changed, 36 insertions(+)
  create mode 100644 runcommand.txt
 
+$ git add .
+
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   runcommand.txt
+        deleted:    style.css
+
+$ git commit -m "delete file css"
+[master c98139d] delete file css
+ 2 files changed, 2 insertions(+), 18 deletions(-)
+ delete mode 100644 style.css
+
+$ git log --oneline
+c98139d (HEAD -> master) delete file css
+a25b4f3 Save work
+41665a3 new file command
+c141f9c change test
+f2f9fd3 new file
+
+$ git checkout a25b4f3
+Note: switching to 'a25b4f3'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+
+$ git checkout master
+
+$ git revert c98139d
+:wq
+
+$ git branch -M main
+
+$ git remote add origin https://github.com/bachmv/GitProject
+
+$ git pull -u origin main --allow-unrelated-histories
+
+$ pit push -u origin main 
+
+
+
 
 
