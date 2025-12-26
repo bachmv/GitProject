@@ -33,4 +33,18 @@ $ git commit -m "change test"
 [master c141f9c] change test
  1 file changed, 1 insertion(+), 1 deletion(-)
 
+$ git add .
+
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   runcommand.txt
+
+$ git commit -m "new file command"
+[master 41665a3] new file command
+ 1 file changed, 36 insertions(+)
+ create mode 100644 runcommand.txt
+
+
 
